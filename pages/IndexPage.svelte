@@ -27,7 +27,7 @@
 </style>
 
 <svelte:head>
-  <title>Crostini Snacks</title>
+  <title>Home</title>
 </svelte:head>
 
 <FeaturedSnacks {snacks} title="Featured Snacks" />
