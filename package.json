@@ -1,0 +1,40 @@
+{
+  "name": "@snackexchange/site-kit",
+  "version": "1.0.0",
+  "description": "Site Kit",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gophersnacks/site-kit.git"
+  },
+  "keywords": [
+    "snackexchange"
+  ],
+  "devDependencies": {
+    "svelte": "^3.5.1",
+    "bluebird": "^3.5.5",
+    "firebase": "^5.10.1",
+    "remark": "^10.0.1",
+    "rxfire": "^3.4.1",
+    "rxjs": "^6.5.1",
+    "showdown": "^1.9.0",
+    "svero": "^0.5.0"
+  },
+  "author": "Brian Ketelsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gophersnacks/site-kit/issues"
+  },
+  "files": [
+    "index.mjs",
+    "base.css",
+    "components",
+    "Firebase.js",
+    "pages",
+    "utils"
+  ],
+  "homepage": "https://github.com/gophersnacks/site-kit#readme"
+}
