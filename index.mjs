@@ -6,7 +6,6 @@ export { default as FeaturedTutorials } from './components/FeaturedTutorials.sve
 export { default as Header } from './components/Header.svelte';
 export { default as Nav } from './components/Nav.svelte';
 export { default as Hero } from './components/Hero.svelte';
-export { default as SignIn } from './components/SignIn.svelte';
 export { default as Snack } from './components/Snack.svelte';
 export { default as Tutorial} from './components/Tutorial.svelte';
 export { default as TableOfContents } from './components/TableOfContents.svelte';

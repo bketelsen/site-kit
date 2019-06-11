@@ -1,6 +1,6 @@
 {
   "name": "@snackexchange/site-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Site Kit",
   "main": "index.mjs",
   "scripts": {
@@ -32,7 +32,6 @@
     "index.mjs",
     "base.css",
     "components",
-    "Firebase.js",
     "pages",
     "utils"
   ],

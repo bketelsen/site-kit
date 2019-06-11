@@ -1,15 +1,11 @@
 <script>
   import { Link } from "svero";
-  import SignIn from './SignIn.svelte';
-	import {loggedIn$} from '../Firebase.js'
   export let title;
-	/* Make something more observable */
-  const user = loggedIn$;
-
+  export let user;
   let pathname = "";
   // Those contains useful information about current route status
   function popState(e) {
-	  pathname = window.location.pathname;
+    pathname = window.location.pathname;
   }
   function isSelected(link, p) {
     if (link === p) {
@@ -26,9 +22,11 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-      <span class="navbar-item">
-        <Link class="navbar-item" href="/"><h1>{title}</h1></Link>
-      </span>
+    <span class="navbar-item">
+      <Link class="navbar-item" href="/">
+        <h1>{title}</h1>
+      </Link>
+    </span>
 
     <a
       role="button"
@@ -69,12 +67,7 @@
     </div>
 
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-        <Link class="button is-primary" href="/signup">Sign Up</Link>
-        <Link class="button is-light" href="/login">Log In</Link>
-        </div>
-      </div>
+      <slot></slot>
     </div>
   </div>
 </nav>
